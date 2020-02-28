@@ -59,6 +59,6 @@ for ($i=0; $i -lt $computerInfo.count;$i++){
 }
  $table | Export-Csv -Path "C:/outfile.csv" -NoTypeInformation
 
- Invoke-WebRequest 
+ 
 
 #$computerInfo = invoke-cmquery -name "PPM De3vices Export to AP " | Select-Object SMS_G_System_COMPUTER_SYSTEM.Name,SMS_G_System_COMPUTER_SYSTEM.Model,SMS_G_System_COMPUTER_SYSTEM.Manufacturer, SMS_G_System_COMPUTER_SYSTEM_PRODUCT.IndentifyingNumber,IPAddresses[0],SMS_R_System.MACAddresses[0],SMS_R_System.SMBIOSGUID
